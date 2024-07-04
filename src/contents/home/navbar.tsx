@@ -10,7 +10,7 @@ export const NavBar = () => {
   return (
     <>
       <nav className="h-64 w-screen px-24">
-        <div className="z-1 absolute h-full w-[80%] translate-y-[-75%] justify-center overflow-x-hidden rounded-full bg-gradient-to-r from-[#3F64E9]/30 via-[#E93F3F]/30 to-[#FFB800]/30 blur-[150px]"></div>
+        <div className="z-1 absolute h-full w-[80%] translate-y-[-75%] rounded-full bg-gradient-to-r from-[#3F64E9]/30 via-[#E93F3F]/30 to-[#FFB800]/30 blur-[150px]"></div>
         <div className="text-lightGray m-2 flex w-full items-center justify-between rounded-md bg-[#18181D] bg-opacity-30 p-6 text-sm">
           <div className="flex gap-10">
             <Link href="#about">About</Link>
