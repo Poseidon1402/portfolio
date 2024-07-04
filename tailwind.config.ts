@@ -5,9 +5,18 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./src/contents/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
     extend: {
+      colors: {
+        black: "#0D0D0D",
+        darkGray: "#808080",
+        lightGray: "#C5C5C5",
+        red: "#E93F3F",
+        blue: "#3F64E9",
+        yellow: "#FFB800",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
