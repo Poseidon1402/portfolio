@@ -1,11 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { useEffect, useState } from "react";
-import { BiCloset, BiMenu } from "react-icons/bi";
-import { BsGithub, BsLinkedin, BsSun, BsTwitterX } from "react-icons/bs";
+import { BiMenu } from "react-icons/bi";
 import { CgClose } from "react-icons/cg";
-import { RxDividerVertical } from "react-icons/rx";
 import { NavbarItems } from "./navbar_items";
 
 export const NavBar = () => {
