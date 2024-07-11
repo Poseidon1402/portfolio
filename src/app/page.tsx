@@ -1,4 +1,4 @@
-import { Presentation, ProjectList } from "@/contents";
+import { Presentation, ProjectList, Tools } from "@/contents";
 import { NavBar } from "@/contents/home/navbar";
 
 export default function Home() {
@@ -7,6 +7,7 @@ export default function Home() {
       <NavBar />
       <Presentation />
       <ProjectList />
+      <Tools />
     </div>
   );
 }
