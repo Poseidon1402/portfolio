@@ -1,11 +1,12 @@
-import { Presentation } from "@/contents";
+import { Presentation, ProjectList } from "@/contents";
 import { NavBar } from "@/contents/home/navbar";
 
 export default function Home() {
   return (
-    <div className="h-screen bg-white">
+    <div className="bg-white">
       <NavBar />
       <Presentation />
+      <ProjectList />
     </div>
   );
 }

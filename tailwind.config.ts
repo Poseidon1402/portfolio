@@ -19,6 +19,7 @@ const config: Config = {
         blue: "#3F64E9",
         yellow: "#FFB800",
         faintWhite: "#F3F3F3",
+        onyx: "#181818",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
