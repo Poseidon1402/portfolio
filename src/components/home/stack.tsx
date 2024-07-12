@@ -1,4 +1,4 @@
-import { NextJS } from "@/assets";
+import { ReactSVG } from "react-svg";
 
 type StackProps = {
   icon: JSX.Element;

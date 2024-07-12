@@ -1,5 +1,5 @@
-import { NextJS } from "@/assets";
 import { Stack } from "@/components";
+import { icons } from "@/assets";
 
 export const Tools = () => {
   return (
@@ -9,10 +9,11 @@ export const Tools = () => {
         The dev tools, technologies and programming languages I use
       </p>
       <div className="grid gap-4">
-        <Stack icon={<NextJS />} label="Next.js" type="Web Framework" />
-        <Stack icon={<NextJS />} label="Next.js" type="Web Framework" />
-        <Stack icon={<NextJS />} label="Next.js" type="Web Framework" />
-        <Stack icon={<NextJS />} label="Next.js" type="Web Framework" />
+        <Stack
+          icon={<icons.Flutter />}
+          label="Flutter"
+          type="Mobile Framework"
+        />
       </div>
     </div>
   );
