@@ -36,7 +36,7 @@ const config: Config = {
       TV: "1919px",
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/forms")],
 } satisfies Config;
 
 export default config;
