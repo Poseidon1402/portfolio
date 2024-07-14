@@ -2,7 +2,7 @@ import { Input } from "@/components";
 
 export const ContactMe = () => {
   return (
-    <div className="flex flex-col gap-8 px-12">
+    <div className="flex flex-col gap-8 px-12" id="contactMe">
       <div>
         <h1 className="text-[36px] font-bold">Get in touch</h1>
         <p className="text-sm text-[#808080]/50">
