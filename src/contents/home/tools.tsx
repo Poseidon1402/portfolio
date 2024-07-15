@@ -1,5 +1,6 @@
 import { Stack } from "@/components";
 import { icons } from "@/assets";
+import { tools } from "@/data/my_data";
 
 export const Tools = () => {
   return (
@@ -9,11 +10,9 @@ export const Tools = () => {
         The dev tools, technologies and programming languages I use
       </p>
       <div className="grid gap-4">
-        <Stack
-          icon={<icons.Flutter />}
-          label="Flutter"
-          type="Mobile Framework"
-        />
+        {tools.map((tool) => (
+          <Stack key={tool.name} {...tool} />
+        ))}
       </div>
     </div>
   );

@@ -1,8 +1,9 @@
 import { images } from "@/assets";
+import { Project } from "@/data/my_data";
 import Image from "next/image";
 import { BsGithub } from "react-icons/bs";
 
-export const Project = () => {
+export const ProjectTile = (project: Project) => {
   return (
     <div className="flex h-[500px] flex-col rounded-3xl border border-[#EBEBEB] bg-[#F6F6F6]">
       <Image
@@ -12,12 +13,8 @@ export const Project = () => {
       />
       <div className="flex h-1/2 flex-col justify-between p-5">
         <div className="flex flex-col gap-3">
-          <h1 className="text-onyx">Project Tile goes here</h1>
-          <p className="text-sm text-darkGray">
-            This is sample project description random things are here in
-            description This is sample project lorem ipsum generator for dummy
-            content
-          </p>
+          <h1 className="text-onyx">{project.name}</h1>
+          <p className="text-sm text-darkGray">{project.description}</p>
           <p className="text-sm text-darkGray">
             Tech stack :{" "}
             <span className="font-semibold">HTML, JavaScript, SASS</span>
