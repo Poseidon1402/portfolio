@@ -18,7 +18,7 @@ export const Input = ({ type, label, id, placeholder }: InputProps) => {
         name={label}
         id={id}
         placeholder={placeholder}
-        className="border-none"
+        className="w-full border-none focus:ring-0"
       />
     </div>
   );

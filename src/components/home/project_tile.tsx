@@ -5,13 +5,13 @@ import { BsGithub } from "react-icons/bs";
 
 export const ProjectTile = (project: Project) => {
   return (
-    <div className="flex h-[500px] flex-col rounded-3xl border border-[#EBEBEB] bg-[#F6F6F6]">
+    <div className="flex h-[600px] flex-col rounded-3xl border border-[#EBEBEB] bg-[#F6F6F6]">
       <Image
         src={images.model}
         alt="model"
         className="h-1/2 w-full basis-1 rounded-t-3xl"
       />
-      <div className="flex h-1/2 flex-col justify-between p-5">
+      <div className="flex h-full flex-col justify-between p-4">
         <div className="flex flex-col gap-3">
           <h1 className="text-onyx">{project.name}</h1>
           <p className="text-sm text-darkGray">{project.description}</p>

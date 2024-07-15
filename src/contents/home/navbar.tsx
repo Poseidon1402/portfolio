@@ -9,7 +9,7 @@ export const NavBar = () => {
 
   return (
     <>
-      <div>
+      <div className="flex justify-center">
         <nav className="fixed bottom-8 h-16 w-full px-12">
           <div className="z-1 absolute hidden h-full w-[80%] translate-y-[-75%] rounded-full bg-gradient-to-r from-[#3F64E9]/30 via-[#E93F3F]/30 to-[#FFB800]/30 blur-[150px]"></div>
           <NavbarItems />

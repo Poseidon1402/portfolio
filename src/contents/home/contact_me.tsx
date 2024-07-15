@@ -2,7 +2,7 @@ import { Input } from "@/components";
 
 export const ContactMe = () => {
   return (
-    <div className="flex flex-col gap-8 px-12" id="contactMe">
+    <div className="flex flex-col gap-8" id="contactMe">
       <div>
         <h1 className="text-[36px] font-bold">Get in touch</h1>
         <p className="text-sm text-[#808080]/50">
@@ -46,11 +46,13 @@ export const ContactMe = () => {
             id="message"
             placeholder="Write your message here"
             rows={15}
-            className="my-5 w-full resize-none rounded-2xl border-none bg-faintWhite p-4 text-sm text-darkGray"
+            className="my-5 w-full resize-none rounded-2xl border-none bg-faintWhite p-4 text-sm text-darkGray focus:ring-0"
           ></textarea>
-          <button className="w-full rounded-2xl bg-gradient-to-b from-[#1A1A1A] to-[#131313] p-4 text-white">
-            Send
-          </button>
+          <div className="flex justify-end">
+            <button className="w-full rounded-2xl bg-gradient-to-b from-[#1A1A1A] to-[#131313] p-4 text-white desktop:w-40 desktop:self-end">
+              Send
+            </button>
+          </div>
           <div className="h-16"></div>
         </div>
       </div>

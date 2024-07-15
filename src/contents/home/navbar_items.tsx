@@ -4,7 +4,7 @@ import { TfiEmail } from "react-icons/tfi";
 
 export const NavbarItems = () => {
   return (
-    <div className="mt-3 flex w-full justify-between rounded-2xl border border-[#27262C]/40 bg-[#18181D]/60 p-5">
+    <div className="mt-3 flex w-full justify-between rounded-2xl border border-[#27262C]/40 bg-[#18181D]/60 p-5 laptop:hidden">
       <Link href="#home">
         <BsPerson size={24} className="text-lightGray" />
       </Link>
