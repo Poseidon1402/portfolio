@@ -1,4 +1,3 @@
-import { images } from "@/assets";
 import { Project } from "@/data/my_data";
 import Image from "next/image";
 import { BsGithub } from "react-icons/bs";
@@ -7,7 +6,7 @@ export const ProjectTile = (project: Project) => {
   return (
     <div className="flex h-[600px] flex-col rounded-3xl border border-[#EBEBEB] bg-[#F6F6F6]">
       <Image
-        src={images.model}
+        src={project.image}
         alt="model"
         className="h-1/2 w-full basis-1 rounded-t-3xl"
       />
