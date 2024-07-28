@@ -1,4 +1,5 @@
 import androidStudio from "./android_studio.svg";
+import { AnimatedSpinner } from "./animated_spinner";
 import dart from "./dart.svg";
 import docker from "./docker.svg";
 import figma from "./figma.svg";
@@ -35,5 +36,6 @@ export const icons = {
   react,
   tailwind,
   typescript,
+  AnimatedSpinner,
   vscode,
 };

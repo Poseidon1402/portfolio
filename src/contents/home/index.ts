@@ -4,3 +4,4 @@ export * from "./presentation";
 export * from "./project_list";
 export * from "./tools";
 export * from "./contact_me";
+export * from "./form";

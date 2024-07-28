@@ -1,4 +1,4 @@
-import { Input } from "@/components";
+import { Form } from "./form";
 
 export const ContactMe = () => {
   return (
@@ -20,41 +20,7 @@ export const ContactMe = () => {
             New Message
           </div>
         </div>
-        <div>
-          <div className="flex flex-col py-5">
-            <Input
-              type="email"
-              label="Email"
-              placeholder="Enter your email address"
-              id="Email"
-            />
-            <Input
-              type="text"
-              label="Name"
-              placeholder="Enter your name"
-              id="Name"
-            />
-            <Input
-              type="text"
-              label="Subject"
-              placeholder="Enter subject"
-              id="Subject"
-            />
-          </div>
-          <textarea
-            name="message"
-            id="message"
-            placeholder="Write your message here"
-            rows={15}
-            className="my-5 w-full resize-none rounded-2xl border-none bg-faintWhite p-4 text-sm text-darkGray focus:ring-0"
-          ></textarea>
-          <div className="flex justify-end">
-            <button className="w-full rounded-2xl bg-gradient-to-b from-[#1A1A1A] to-[#131313] p-4 text-white desktop:w-40 desktop:self-end">
-              Send
-            </button>
-          </div>
-          <div className="h-16"></div>
-        </div>
+        <Form />
       </div>
     </div>
   );
