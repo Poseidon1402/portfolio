@@ -36,7 +36,7 @@ const config: Config = {
       TV: "1919px",
     },
   },
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [require("@tailwindcss/forms"), require("tailwind-scrollbar")],
 } satisfies Config;
 
 export default config;
