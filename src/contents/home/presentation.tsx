@@ -1,0 +1,63 @@
+import { about } from "@/data/my_data";
+import Image from "next/image";
+import Link from "next/link";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { SiCodersrank } from "react-icons/si";
+
+export const Presentation = () => {
+  return (
+    <div className="flex flex-col gap-4">
+      <div className="flex flex-col items-center gap-6 laptop:flex-row-reverse laptop:gap-10">
+        <Image
+          src="/photo.jpg"
+          alt="Aina"
+          width={200}
+          height={200} // Ensure aspect ratio is maintained
+          className="mt-5 aspect-square rounded-full border-4 border-white object-cover shadow-lg transition-shadow duration-300 hover:shadow-2xl"
+        />
+        <div className="text-center laptop:text-left">
+          <h1 className="text-[44px] font-bold text-gray-600">
+            Hi 👋 <br />
+            I’m <span className="text-black">{about.name}</span>
+          </h1>
+          <p className="text-md text-gray-500">{about.description}</p>
+          <ul className="my-4 flex justify-center gap-6 laptop:justify-start">
+            <li>
+              <Link href="https://github.com/Poseidon1402" target="_blank">
+                <BsGithub
+                  className="text-gray-600 transition-colors duration-300 hover:text-black"
+                  size={30}
+                />
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://www.linkedin.com/in/aina-tiavina/"
+                target="_blank"
+              >
+                <BsLinkedin
+                  className="text-blue-600 hover:text-blue-800 transition-colors duration-300"
+                  size={30}
+                />
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://profile.codersrank.io/user/poseidon1402"
+                target="_blank"
+              >
+                <SiCodersrank
+                  className="text-green-600 transition-colors duration-300 hover:text-green-800"
+                  size={30}
+                />
+              </Link>
+            </li>
+          </ul>
+          <button className="mt-5 w-full rounded-xl bg-gradient-to-r from-gray-800 to-black p-3 text-sm text-white shadow-md transition-shadow duration-300 hover:shadow-lg laptop:w-36">
+            <Link href="#contactMe">Get in touch</Link>
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+};
