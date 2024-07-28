@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -21,6 +23,7 @@ export default function RootLayout({
     <html lang="en" className="!scroll-smooth">
       <body className={`${poppins.className} dark bg-white text-black`}>
         {children}
+        <ToastContainer />
       </body>
     </html>
   );
