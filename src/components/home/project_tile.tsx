@@ -27,15 +27,18 @@ export const ProjectTile = (project: Project) => {
             ))}
           </div>
         </div>
-        <div className="flex items-center gap-2 self-end">
-          <BsGithub className="text-lg" />
-          <a
-            href="#"
-            className="text-xs text-onyx underline hover:text-darkGray"
-          >
-            Source code
-          </a>
-        </div>
+        {project.sourceCode && (
+          <div className="flex items-center gap-2 self-end">
+            <BsGithub className="text-lg" />
+            <a
+              href={project.sourceCode}
+              target="_blank"
+              className="text-xs text-onyx underline hover:text-darkGray"
+            >
+              Source code
+            </a>
+          </div>
+        )}
       </div>
     </div>
   );
