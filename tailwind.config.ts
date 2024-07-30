@@ -7,7 +7,7 @@ const config: Config = {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/contents/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: ["class", '[data-theme="dark"]'],
+  darkMode: "class",
   prefix: "",
   theme: {
     extend: {
