@@ -16,8 +16,8 @@ export const NavBarItem = ({ label, section }: NavBarItemProps) => {
         duration={500}
         offset={-70}
         spy={true}
-        className="cursor-pointer rounded-lg hover:bg-onyx/50 hover:p-2 hover:text-white"
-        activeClass="text-white font-semibold bg-onyx/50 p-2"
+        className="cursor-pointer rounded-xl hover:bg-onyx/50 hover:p-2 hover:text-white dark:text-white"
+        activeClass="text-white font-medium bg-onyx/50 p-2 dark:bg-white/10 dark:text-white rounded-xl"
       >
         {label}
       </Link>

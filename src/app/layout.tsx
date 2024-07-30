@@ -22,7 +22,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={`${poppins.className} dark bg-white text-black`}>
+      <body className={`${poppins.className} bg-white text-black`}>
         <Providers>
           {children}
           <ToastContainer />

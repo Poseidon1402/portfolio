@@ -11,7 +11,7 @@ export const ThemeSwitch = ({ className }: { className?: string }) => {
       <FiSun
         onClick={() => setTheme("light")}
         size={24}
-        className={className}
+        className={`${className} cursor-pointer`}
       />
     );
   } else {
@@ -19,7 +19,7 @@ export const ThemeSwitch = ({ className }: { className?: string }) => {
       <FiMoon
         onClick={() => setTheme("dark")}
         size={24}
-        className={className}
+        className={`${className} cursor-pointer`}
       />
     );
   }

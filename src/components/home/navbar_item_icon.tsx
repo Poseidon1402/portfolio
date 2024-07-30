@@ -16,7 +16,7 @@ export const NavbarItemIcon = ({ to, icon }: NavbarItemIconProps) => {
       duration={500}
       offset={-70}
       spy={true}
-      activeClass="text-white font-semibold bg-onyx/50 p-2"
+      activeClass="text-white font-semibold bg-onyx/50 p-2 dark:bg-white/10 dark:text-white rounded-xl"
     >
       {icon}
     </Link>

@@ -1,10 +1,9 @@
-"use client";
-
 import { about } from "@/data/my_data";
 import Image from "next/image";
-import { Link } from "react-scroll";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { SiCodersrank } from "react-icons/si";
+import Link from "next/link";
+import { GetInTouchButton } from "@/components";
 
 export const Presentation = () => {
   return (
@@ -15,37 +14,38 @@ export const Presentation = () => {
           alt="Aina"
           width={200}
           height={200}
-          className="mt-5 aspect-square rounded-full border-4 border-white object-cover shadow-lg transition-shadow duration-300 hover:shadow-2xl"
+          className="mt-5 aspect-square rounded-full border-4 border-white object-cover shadow-lg transition-shadow duration-300 hover:shadow-2xl dark:border-onyx"
         />
         <div className="text-center laptop:text-left">
           <h1 className="text-[44px] font-bold text-gray-600">
             Hi 👋 <br />
-            I’m <span className="text-black">{about.name}</span>
+            I’m <span className="text-black dark:text-white">{about.name}</span>
           </h1>
           <p className="text-md text-gray-500">{about.description}</p>
           <ul className="my-4 flex justify-center gap-6 laptop:justify-start">
             <li>
-              <Link to="https://github.com/Poseidon1402" target="_blank">
+              <Link href="https://github.com/Poseidon1402" target="_blank">
                 <BsGithub
-                  className="text-gray-600 transition-colors duration-300 hover:text-black"
+                  className="text-gray-600 transition-colors duration-300 hover:text-black dark:text-white"
                   size={30}
                 />
               </Link>
             </li>
             <li>
               <Link
-                to="https://www.linkedin.com/in/aina-tiavina/"
+                href="https://www.linkedin.com/in/aina-tiavina/"
                 target="_blank"
+                className="cursor-pointer"
               >
                 <BsLinkedin
-                  className="text-blue-600 hover:text-blue-800 transition-colors duration-300"
+                  className="text-blue-600 hover:text-blue-800 transition-colors duration-300 dark:text-white"
                   size={30}
                 />
               </Link>
             </li>
             <li>
               <Link
-                to="https://profile.codersrank.io/user/poseidon1402"
+                href="https://profile.codersrank.io/user/poseidon1402"
                 target="_blank"
               >
                 <SiCodersrank
@@ -55,11 +55,7 @@ export const Presentation = () => {
               </Link>
             </li>
           </ul>
-          <button className="mt-5 w-full rounded-xl bg-gradient-to-r from-gray-800 to-black p-3 text-sm text-white shadow-md transition-shadow duration-300 hover:shadow-lg laptop:w-36">
-            <Link to="contactMe" smooth duration={500}>
-              Get in touch
-            </Link>
-          </button>
+          <GetInTouchButton />
         </div>
       </div>
     </div>

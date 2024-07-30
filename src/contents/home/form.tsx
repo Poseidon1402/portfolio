@@ -33,21 +33,27 @@ export const Form = () => {
         className="flex flex-col gap-2 py-5"
         onSubmit={handleSubmit(onSubmit)}
       >
-        <div className="flex items-center gap-2 border-b border-b-[#C5C5C5] py-3">
-          <label htmlFor="name" className="text-sm font-medium text-onyx">
+        <div className="flex items-center gap-2 border-b border-b-[#C5C5C5] py-3 dark:border-b-white/10">
+          <label
+            htmlFor="name"
+            className="text-sm font-medium text-onyx dark:text-white"
+          >
             Name:
           </label>
           <input
             {...register("name")}
             placeholder="Enter your name"
-            className="w-full border-none text-xs focus:ring-0"
+            className="w-full border-none bg-transparent text-xs focus:ring-0"
           />
         </div>
         {errors.name && (
           <div className="text-xs text-red">{errors.name.message}</div>
         )}
-        <div className="flex items-center gap-2 border-b border-b-[#C5C5C5] py-3">
-          <label htmlFor="email" className="text-sm font-medium text-onyx">
+        <div className="flex items-center gap-2 border-b border-b-[#C5C5C5] py-3 dark:border-b-white/10">
+          <label
+            htmlFor="email"
+            className="text-sm font-medium text-onyx dark:text-white"
+          >
             Email:
           </label>
           <input
@@ -55,14 +61,17 @@ export const Form = () => {
             id="email"
             type="email"
             placeholder="Enter your email address"
-            className="w-full border-none text-xs focus:ring-0"
+            className="w-full border-none bg-transparent text-xs text-white focus:ring-0"
           />
         </div>
         {errors.email && (
           <div className="text-xs text-red">{errors.email.message}</div>
         )}
-        <div className="flex items-center gap-2 border-b border-b-[#C5C5C5] py-3">
-          <label htmlFor="subject" className="text-sm font-medium text-onyx">
+        <div className="flex items-center gap-2 border-b border-b-[#C5C5C5] py-3 dark:border-b-white/10">
+          <label
+            htmlFor="subject"
+            className="text-sm font-medium text-onyx dark:text-white"
+          >
             Subject:
           </label>
           <input
@@ -70,7 +79,7 @@ export const Form = () => {
             id="subject"
             type="text"
             placeholder="Enter subject"
-            className="w-full border-none text-xs focus:ring-0"
+            className="w-full border-none bg-transparent text-xs text-white focus:ring-0"
           />
         </div>
         {errors.subject && (
@@ -82,7 +91,7 @@ export const Form = () => {
           id="message"
           placeholder="Write your message here"
           rows={15}
-          className="my-5 w-full resize-none rounded-2xl border-none bg-faintWhite p-4 text-sm text-darkGray focus:ring-0"
+          className="my-5 w-full resize-none rounded-2xl border-none bg-faintWhite p-4 text-sm text-darkGray focus:ring-0 dark:bg-black"
         ></textarea>
         {errors.message && (
           <div className="text-xs text-red">{errors.message.message}</div>
@@ -102,7 +111,6 @@ export const Form = () => {
           )}
         </div>
       </form>
-      <div className="h-16"></div>
     </div>
   );
 };
