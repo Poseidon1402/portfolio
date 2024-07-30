@@ -27,7 +27,7 @@ export const projects: Project[] = [
     name: "Quizko",
     description:
       "Quizko is a fun and interactive mobile app designed to make learning enjoyable. With a variety of quizzes on different topics, Quizko helps users test their knowledge and improve their skills in a playful way",
-    technologies: ["Flutter", "Laravel", "MySQL"],
+    technologies: ["Flutter", "Laravel", "MySQL", "Codemagic"],
     image: images.quizko,
   },
   {

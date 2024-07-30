@@ -1,11 +1,10 @@
 import { Stack } from "@/components";
-import { icons } from "@/assets";
 import { tools } from "@/data/my_data";
 
 export const Tools = () => {
   return (
     <div className="flex flex-col gap-4 py-8" id="skills">
-      <p className="text-[32px] font-bold">Tools</p>
+      <p className="text-[32px] font-bold dark:text-white">Tools</p>
       <p className="text-sm text-[#808080]/45">
         The dev tools, technologies and programming languages that I use
       </p>

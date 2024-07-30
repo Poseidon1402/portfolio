@@ -3,6 +3,7 @@ import { Poppins } from "next/font/google";
 import "./globals.css";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { Providers } from "./providers";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -20,10 +21,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="!scroll-smooth">
-      <body className={`${poppins.className} dark bg-white text-black`}>
-        {children}
-        <ToastContainer />
+    <html lang="en" suppressHydrationWarning>
+      <body className={`${poppins.className} bg-white text-black`}>
+        <Providers>
+          {children}
+          <ToastContainer />
+        </Providers>
       </body>
     </html>
   );
