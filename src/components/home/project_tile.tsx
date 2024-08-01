@@ -12,7 +12,9 @@ export const ProjectTile = (project: Project) => {
       />
       <div className="flex h-full flex-col justify-between p-4">
         <div className="flex flex-col gap-3">
-          <h1 className="text-lg font-bold text-onyx">{project.name}</h1>
+          <h1 className="text-lg font-bold text-onyx dark:text-white">
+            {project.name}
+          </h1>
           <p className="text-xs text-darkGray desktop:text-sm">
             {project.description}
           </p>
