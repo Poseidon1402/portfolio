@@ -42,7 +42,7 @@ export const projects: Project[] = [
     name: "Farwest Restaurant",
     description:
       "The Farwest restaurant website is a creative and functional project developed during the WebCup 2024 competition. This website showcases the unique Western-themed dining experience offered by Farwest restaurant.",
-    technologies: ["ReactJS", "NestJS", "PostgreSQL"],
+    technologies: ["ReactJS", "Typescript", "NestJS", "PostgreSQL"],
     image: images.farwest,
     sourceCode: "https://gitlab.com/safidy1863/webcup-2024",
   },
