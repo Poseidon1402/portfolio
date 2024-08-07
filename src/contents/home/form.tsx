@@ -43,7 +43,7 @@ export const Form = () => {
           <input
             {...register("name")}
             placeholder="Enter your name"
-            className="w-full border-none bg-transparent text-xs focus:ring-0"
+            className="w-full border-none bg-transparent text-xs focus:ring-0 dark:text-white"
           />
         </div>
         {errors.name && (
@@ -61,7 +61,7 @@ export const Form = () => {
             id="email"
             type="email"
             placeholder="Enter your email address"
-            className="w-full border-none bg-transparent text-xs text-white focus:ring-0"
+            className="w-full border-none bg-transparent text-xs focus:ring-0 dark:text-white"
           />
         </div>
         {errors.email && (
@@ -79,7 +79,7 @@ export const Form = () => {
             id="subject"
             type="text"
             placeholder="Enter subject"
-            className="w-full border-none bg-transparent text-xs text-white focus:ring-0"
+            className="w-full border-none bg-transparent text-xs focus:ring-0 dark:text-white"
           />
         </div>
         {errors.subject && (
@@ -91,7 +91,7 @@ export const Form = () => {
           id="message"
           placeholder="Write your message here"
           rows={15}
-          className="my-5 w-full resize-none rounded-2xl border-none bg-faintWhite p-4 text-sm text-darkGray focus:ring-0 dark:bg-black"
+          className="my-5 w-full resize-none rounded-2xl border-none bg-faintWhite p-4 text-sm text-onyx focus:ring-0 dark:bg-black dark:text-white"
         ></textarea>
         {errors.message && (
           <div className="text-xs text-red">{errors.message.message}</div>
