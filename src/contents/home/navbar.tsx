@@ -1,10 +1,6 @@
 import { NavbarItems } from "./navbar_items";
 
 export const NavBar = () => {
-  // #3F64E9 (Blue)
-  // #E93F3F (Red)
-  // #FFB800 (Yellow)
-
   return (
     <>
       <div className="fixed bottom-8 right-0 z-50 flex w-full justify-center laptop:sticky laptop:top-0">
