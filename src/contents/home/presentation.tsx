@@ -17,9 +17,9 @@ export const Presentation = () => {
           className="mt-5 aspect-square rounded-full border-4 border-white object-cover shadow-lg transition-shadow duration-300 hover:shadow-2xl dark:border-onyx"
         />
         <div className="text-center laptop:text-left">
-          <h1 className="text-[44px] font-bold text-gray-600">
+          <h1 className="text-[28px] font-bold text-gray-600 tablet:text-[36px] desktop:text-[44px]">
             Hi 👋 <br />
-            I’m{" "}
+            I’m
             <FlipWords
               words={about.name}
               className="bg-gradient-to-tr from-[#7F5AF0] via-[#FF4D4D] to-[#F9CB40] bg-clip-text text-transparent"
