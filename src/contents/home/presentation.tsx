@@ -3,7 +3,7 @@ import Image from "next/image";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { SiCodersrank } from "react-icons/si";
 import Link from "next/link";
-import { GetInTouchButton } from "@/components";
+import { GetInTouchButton, TextGenerateEffect } from "@/components";
 
 export const Presentation = () => {
   return (
@@ -21,7 +21,10 @@ export const Presentation = () => {
             Hi 👋 <br />
             I’m <span className="text-black dark:text-white">{about.name}</span>
           </h1>
-          <p className="text-md text-gray-500">{about.description}</p>
+          <TextGenerateEffect
+            words={about.description}
+            className="text-md font-normal text-gray-500"
+          />
           <ul className="my-4 flex justify-center gap-6 laptop:justify-start">
             <li>
               <Link href="https://github.com/Poseidon1402" target="_blank">
