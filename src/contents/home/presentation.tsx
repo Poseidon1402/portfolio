@@ -3,7 +3,7 @@ import Image from "next/image";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { SiCodersrank } from "react-icons/si";
 import Link from "next/link";
-import { GetInTouchButton, TextGenerateEffect } from "@/components";
+import { FlipWords, GetInTouchButton, TextGenerateEffect } from "@/components";
 
 export const Presentation = () => {
   return (
@@ -19,7 +19,10 @@ export const Presentation = () => {
         <div className="text-center laptop:text-left">
           <h1 className="text-[44px] font-bold text-gray-600">
             Hi 👋 <br />
-            I’m <span className="text-black dark:text-white">{about.name}</span>
+            I’m{" "}
+            <span className="text-black dark:text-white">
+              <FlipWords words={about.name} />
+            </span>
           </h1>
           <TextGenerateEffect
             words={about.description}
