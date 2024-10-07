@@ -1,7 +1,7 @@
 import { about } from "@/data/my_data";
 import Image from "next/image";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
-import { SiCodersrank } from "react-icons/si";
+import { SiCodersrank, SiSkype } from "react-icons/si";
 import Link from "next/link";
 import { FlipWords, GetInTouchButton, TextGenerateEffect } from "@/components";
 
@@ -20,9 +20,10 @@ export const Presentation = () => {
           <h1 className="text-[44px] font-bold text-gray-600">
             Hi 👋 <br />
             I’m{" "}
-            <span className="text-black dark:text-white">
-              <FlipWords words={about.name} />
-            </span>
+            <FlipWords
+              words={about.name}
+              className="bg-gradient-to-tr from-[#7F5AF0] via-[#FF4D4D] to-[#F9CB40] bg-clip-text text-transparent"
+            />
           </h1>
           <TextGenerateEffect
             words={about.description}
@@ -44,7 +45,7 @@ export const Presentation = () => {
                 className="cursor-pointer"
               >
                 <BsLinkedin
-                  className="text-blue-600 hover:text-blue-800 transition-colors duration-300 dark:text-white"
+                  className="hover:text-blue-800 text-[#0A66C2] transition-colors duration-300"
                   size={30}
                 />
               </Link>
@@ -56,6 +57,17 @@ export const Presentation = () => {
               >
                 <SiCodersrank
                   className="text-green-600 transition-colors duration-300 hover:text-green-800"
+                  size={30}
+                />
+              </Link>
+            </li>
+            <li>
+              <Link
+                href="https://join.skype.com/invite/KwvUxMhdWTrF"
+                target="_blank"
+              >
+                <SiSkype
+                  className="hover:text-blue-800 text-[#0078D4] transition-colors duration-300"
                   size={30}
                 />
               </Link>
