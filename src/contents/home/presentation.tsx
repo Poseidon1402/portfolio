@@ -52,22 +52,22 @@ export const Presentation = () => {
             </li>
             <li>
               <Link
-                href="https://profile.codersrank.io/user/poseidon1402"
+                href="https://join.skype.com/invite/KwvUxMhdWTrF"
                 target="_blank"
               >
-                <SiCodersrank
-                  className="text-green-600 transition-colors duration-300 hover:text-green-800"
+                <SiSkype
+                  className="hover:text-blue-800 text-[#0078D4] transition-colors duration-300"
                   size={30}
                 />
               </Link>
             </li>
             <li>
               <Link
-                href="https://join.skype.com/invite/KwvUxMhdWTrF"
+                href="https://profile.codersrank.io/user/poseidon1402"
                 target="_blank"
               >
-                <SiSkype
-                  className="hover:text-blue-800 text-[#0078D4] transition-colors duration-300"
+                <SiCodersrank
+                  className="text-[#38BC73] transition-colors duration-300 hover:text-green-800"
                   size={30}
                 />
               </Link>
