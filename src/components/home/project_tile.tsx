@@ -22,7 +22,7 @@ export const ProjectTile = ({
       onMouseEnter={() => setHovered(index)}
       onMouseLeave={() => setHovered(null)}
       className={cn(
-        "flex h-[625px] transform cursor-pointer flex-col rounded-3xl border border-[#EBEBEB] bg-[#F6F6F6] transition-transform duration-300 hover:scale-105 hover:shadow-lg dark:border-[#272525] dark:bg-onyx",
+        "flex h-[625px] transform flex-col rounded-3xl border border-[#EBEBEB] bg-[#F6F6F6] transition-transform duration-300 hover:scale-105 hover:shadow-lg dark:border-[#272525] dark:bg-onyx",
         hovered !== null && hovered !== index && "scale-[0.98] blur-sm",
       )}
     >
