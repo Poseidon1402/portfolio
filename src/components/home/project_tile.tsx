@@ -6,13 +6,15 @@ import { Lens } from "../shared";
 export const ProjectTile = (project: Project) => {
   return (
     <div className="flex h-[625px] transform cursor-pointer flex-col rounded-3xl border border-[#EBEBEB] bg-[#F6F6F6] transition-transform duration-300 hover:scale-105 hover:shadow-lg dark:border-[#272525] dark:bg-onyx">
-      <Lens>
-        <Image
-          src={project.image}
-          alt="model"
-          className="w-full rounded-t-3xl object-cover"
-        />
-      </Lens>
+      <div>
+        <Lens>
+          <Image
+            src={project.image}
+            alt="model"
+            className="w-full rounded-t-3xl object-cover"
+          />
+        </Lens>
+      </div>
       <div className="flex h-full flex-col justify-between p-4">
         <div className="flex flex-col gap-3">
           <h1 className="text-lg font-bold text-onyx dark:text-white">
