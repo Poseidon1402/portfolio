@@ -1,21 +1,19 @@
 import { about } from "@/data/my_data";
-import Image from "next/image";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { SiCodersrank, SiSkype } from "react-icons/si";
 import Link from "next/link";
-import { FlipWords, GetInTouchButton, TextGenerateEffect } from "@/components";
+import {
+  FlipWords,
+  GetInTouchButton,
+  MyPicture,
+  TextGenerateEffect,
+} from "@/components";
 
 export const Presentation = () => {
   return (
     <div className="flex flex-col gap-4" id="about">
       <div className="flex flex-col items-center gap-6 laptop:flex-row-reverse laptop:gap-10">
-        <Image
-          src="/photo.jpg"
-          alt="Aina"
-          width={200}
-          height={200}
-          className="mt-5 aspect-square rounded-full border-4 border-white object-cover shadow-lg transition-shadow duration-300 hover:shadow-2xl dark:border-onyx"
-        />
+        <MyPicture />
         <div className="text-center laptop:text-left">
           <h1 className="text-[28px] font-bold text-gray-600 tablet:text-[36px] desktop:text-[44px]">
             Hi 👋 <br />
