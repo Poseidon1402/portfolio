@@ -1,4 +1,4 @@
-import { Stack } from "@/components";
+import { LinkPreview, Stack } from "@/components";
 import { tools } from "@/data/my_data";
 
 export const Tools = () => {
@@ -9,8 +9,10 @@ export const Tools = () => {
         The dev tools, technologies and programming languages that I use
       </p>
       <div className="TV: grid grid-cols-1 gap-4 laptop:grid-cols-2 desktop:grid-cols-4 TV:grid-cols-5">
-        {tools.map((tool) => (
-          <Stack key={tool.name} {...tool} />
+        {tools.map((tool, index) => (
+          <LinkPreview url={tool.website} key={index}>
+            <Stack key={tool.name} {...tool} />
+          </LinkPreview>
         ))}
       </div>
     </div>
