@@ -1,5 +1,6 @@
 import { icons, images } from "@/assets";
 import { StaticImageData } from "next/image";
+import { text } from "stream/consumers";
 
 export type Project = {
   name: string;
@@ -17,7 +18,7 @@ export type Tool = {
 };
 
 export const about = {
-  name: "Aina Tiavina",
+  name: ["Aina Tiavina", "A Mobile Developer", "A Frontend Developer"],
   description:
     "I am a Frontend and Mobile Developer who loves building easy-to-use and attractive apps. I specialize in creating modern websites and mobile applications that work well and look great. My goal is to turn ideas into user-friendly and high-performing digital products.",
 };

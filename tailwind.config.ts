@@ -1,5 +1,9 @@
 import type { Config } from "tailwindcss";
 
+const {
+  default: flattenColorPalette,
+} = require("tailwindcss/lib/util/flattenColorPalette");
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -27,6 +31,19 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    animation: {
+      shimmer: "shimmer 2s linear infinite",
+    },
+    keyframes: {
+      shimmer: {
+        from: {
+          backgroundPosition: "0 0",
+        },
+        to: {
+          backgroundPosition: "-200% 0",
+        },
+      },
+    },
     screens: {
       smartphone: "481px",
       tablet: "577px",
@@ -36,7 +53,23 @@ const config: Config = {
       TV: "1919px",
     },
   },
-  plugins: [require("@tailwindcss/forms"), require("tailwind-scrollbar")],
+  plugins: [
+    require("@tailwindcss/forms"),
+    require("tailwind-scrollbar"),
+    addVariablesForColors,
+  ],
 } satisfies Config;
+
+// This plugin adds each Tailwind color as a global CSS variable, e.g. var(--gray-200).
+function addVariablesForColors({ addBase, theme }: any) {
+  let allColors = flattenColorPalette(theme("colors"));
+  let newVars = Object.fromEntries(
+    Object.entries(allColors).map(([key, val]) => [`--${key}`, val]),
+  );
+
+  addBase({
+    ":root": newVars,
+  });
+}
 
 export default config;

@@ -5,3 +5,4 @@ export * from "./input";
 export * from "./theme_switch";
 export * from "./navbar_item_icon";
 export * from "./get_in_touch_button";
+export * from "./my_picture";
