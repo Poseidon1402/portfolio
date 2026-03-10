@@ -50,17 +50,6 @@ export const Presentation = () => {
             </li>
             <li>
               <Link
-                href="https://join.skype.com/invite/KwvUxMhdWTrF"
-                target="_blank"
-              >
-                <SiSkype
-                  className="hover:text-blue-800 text-[#0078D4] transition-colors duration-300"
-                  size={30}
-                />
-              </Link>
-            </li>
-            <li>
-              <Link
                 href="https://profile.codersrank.io/user/poseidon1402"
                 target="_blank"
               >
