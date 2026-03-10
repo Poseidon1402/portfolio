@@ -67,7 +67,7 @@ export const metadata: Metadata = {
       "Discover the work of RAJOELISON Aina Tiavina — a passionate Frontend & Mobile Developer crafting modern, performant, and user-friendly web and mobile experiences with Flutter, Next.js, and React.",
     images: [
       {
-        url: "/og-image.jpg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "Aina Tiavina RAJOELISON — Frontend & Mobile Developer Portfolio",
@@ -79,7 +79,7 @@ export const metadata: Metadata = {
     title: "Aina Tiavina RAJOELISON | Frontend & Mobile Developer Portfolio",
     description:
       "Discover the work of RAJOELISON Aina Tiavina — a passionate Frontend & Mobile Developer crafting modern web and mobile experiences.",
-    images: ["/og-image.jpg"],
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,

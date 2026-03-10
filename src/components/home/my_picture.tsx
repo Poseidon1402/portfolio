@@ -3,7 +3,7 @@ import Image from "next/image";
 export const MyPicture = () => {
   return (
     <Image
-      src="/photo.jpg"
+      src="/photo.png"
       alt="Aina"
       width={200}
       height={200}
